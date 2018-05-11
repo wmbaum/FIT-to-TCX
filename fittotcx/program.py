@@ -76,7 +76,7 @@ SPORT_MAP = {
 
 
 def ff(number):
-    return '{:.10f}'.format(number).rstrip('0').rstrip('.')
+    return '{:.10f}'.format(number or 0).rstrip('0').rstrip('.')
 
 
 def create_element(tag, text=None, namespace=None):
